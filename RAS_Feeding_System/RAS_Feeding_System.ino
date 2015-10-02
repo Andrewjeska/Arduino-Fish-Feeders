@@ -18,21 +18,19 @@ TankFeeder feederName;
 */
 
 void callfeedFish(){
-  
+  //This part just turns on an LED showing that the process is about to begin
   digitalWrite(13, HIGH);
   delay(1000);
   
-  //Feeder_1.feedFish(1,9);
-  
-  
-  //delay(5000);
-  //Feeder_2.feedFish(1,10);
- // delay(5000);
- Feeder_3.feedFish(1,11);
-  //delay(5000);
-  //Feeder_4.feedFish(1,12);
+  Feeder_1.feedFish(1,9);
+  delay(5000);
+  Feeder_2.feedFish(1,10);
+  delay(5000);
+  Feeder_3.feedFish(1,11);
+  delay(5000);
+  Feeder_4.feedFish(1,12);
   delay(1000);
- digitalWrite(13, LOW);
+  digitalWrite(13, LOW);
 }
   /*
   
@@ -71,7 +69,7 @@ void setup() {
   
   Feeder_1.setFeederServo('T',0,180,95, 60);
   Feeder_1.setFeederServo('B',1,140,40,10);
-  //cal
+  
   
   Feeder_2.setFeederServo('T',2,140,70,50);
   Feeder_2.setFeederServo('B',3,150,50,10);
@@ -81,7 +79,7 @@ void setup() {
   
   Feeder_4.setFeederServo('T',6,150,90,50);
   Feeder_4.setFeederServo('B',7,150,45,50);
-  //cal
+  
   
   
   /*
