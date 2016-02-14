@@ -60,7 +60,7 @@ void setup() {
   pinMode(13,OUTPUT);
   /*
   
-  Make sure your relay_pin 's are put in here like so:
+  Make sure your relays are initiazlied like so
   
   pinMode( relay_pin, OUTPUT);
   
@@ -115,14 +115,14 @@ void setup() {
   
   The arduino should be plugged in at the time set above. This starts the timer. This is done in military time (24hr format). So..
   
-  setTime(Hour, Minute, Second, Month (1-12) Day, Year);
+  setTime(Hour, Minute, Second, Day, Month (1-12), Year);
   
   Pretty self-explanatory
   
   */
   
-  Alarm.timerRepeat(30,callfeedFish);
- // Alarm.alarmRepeat(14,49,00,callfeedFish);
+  //Alarm.timerRepeat(30,callfeedFish);
+  Alarm.alarmRepeat(14,49,00,callfeedFish);
   
   /*
   
